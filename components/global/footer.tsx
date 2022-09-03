@@ -1,43 +1,34 @@
-import { RiTwitterLine, RiLinkedinFill } from "react-icons/ri";
-import { AiOutlineGithub } from "react-icons/ai";
+import { AiOutlineGithub } from "react-icons/Ai";
 import { BsDiscord } from "react-icons/Bs";
+import { RiTwitterLine, RiLinkedinFill } from "react-icons/Ri";
+
+import DecorLine from "../items/decor-line";
 
 export default function Footer() {
   return (
-    <div className="bg-main-red h-[38.4rem] w-full flex flex-row">
-      <div className="h-full w-2/5">
+    <div className="bg-main-red h-[35rem] w-full flex flex-row">
+      <div className="h-full w-[30%]">
         <div className="flex flex-row">
-          <div className="bg-black rounded-full w-[9.6rem] h-[9.6rem] mt-5 ml-5"></div>
+          <div className="bg-black rounded-full w-[5rem] h-[5rem] mt-5 ml-5">
+            <img
+              src="/images/logo.png"
+              className="w-auto bg-secondary-background rounded-full drop-shadow-logo"
+              alt="Logo"
+            />
+          </div>
           <div className="flex flex-col justify-center ml-5 mt-10">
             <h1 className="text-5xl tracking-wider">BRAKET</h1>
             <p className="text-lg ml-5">@2022 FTW Corp.</p>
           </div>
         </div>
-        <svg
-          className="drop-shadow-arrowsvg"
-          width="560"
-          height="50"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            id="svg_3"
-            height="0.33333"
-            width="350"
-            y="20"
-            x="0"
-            stroke="#252627"
-            fill="#252627"
+        <div className="w-[calc(80%)] drop-shadow-arrow-svg flex self-end">
+          <DecorLine
+            className="w-0 flex-grow-[1]"
+            width={45}
+            isLeft={false}
+            color={"#000000"}
           />
-          <ellipse
-            ry="5"
-            rx="5"
-            id="svg_4"
-            cy="20"
-            cx="355"
-            stroke="#252627"
-            fill="#252627"
-          />
-        </svg>
+        </div>
         <div className="flex flex-row">
           <a
             href=""
@@ -65,7 +56,7 @@ export default function Footer() {
           </a>
         </div>
       </div>
-      <div className="h-full w-3/5 flex flex-col text-white">
+      <div className="h-full flex flex-col text-white">
         <div className="flex flex-row w-full h-4/6 space-x-64">
           <div>
             <h1 className="mt-16 text-[2rem] tracking-wider">Resources</h1>
